@@ -202,20 +202,28 @@ g, path {
       min-height: 240px; }
     body .process-logo img {
       width: 45px; }
-    body .popcons {
-      background: url(../images/popcons_banner-mobile.jpg) no-repeat;
+    body .farmerconnect {
+      background: url(../images/farmerconect.png) no-repeat;
       background-size: cover;
       background-blend-mode: luminosity; }
-    body .loral {
-      background: url(../images/loral_banner-mobile.jpg) no-repeat;
+    body .learnfactory {
+      background: url(../images/learnfactory.png) no-repeat;
       background-size: cover;
       background-blend-mode: luminosity; }
-    body .jokerrr {
-      background: url(../images/jokerrr_banner-mobile.jpg) no-repeat;
+    body .leozcreativez {
+      background: url(../images/leozcreativez.png) no-repeat;
       background-size: cover;
       background-blend-mode: luminosity; }
-    body .citidrive {
-      background: url(../images/citidrive_banner-mobile.jpg) no-repeat;
+    body .judic {
+      background: url(../images/judic.png) no-repeat;
+      background-size: cover;
+      background-blend-mode: luminosity; }
+    body .judic1 {
+      background: url(../images/judic1.png) no-repeat;
+      background-size: cover;
+      background-blend-mode: luminosity; }
+    body .judic2 {
+      background: url(../images/judic2.png) no-repeat;
       background-size: cover;
       background-blend-mode: luminosity; }
     body .flex-direction-nav {
@@ -693,26 +701,36 @@ g, path {
   top: 230px;
   left: 400px; }
 
-.popcons {
-  background: url(../images/popcons_banner.jpg) no-repeat;
+.farmerconnect {
+  background: url(../images/farmerconect.png) no-repeat;
   background-size: cover;
   background-blend-mode: luminosity; }
 
-.loral {
-  background: url(../images/loral_banner.jpg) no-repeat;
+.learnfactory {
+  background: url(../images/learnfactory.png) no-repeat;
   background-size: cover;
   background-blend-mode: luminosity; }
 
-.jokerrr {
-  background: url(../images/jokerrr_banner.jpg) no-repeat;
+.leozcreativez {
+  background: url(../images/leozcreativez.png) no-repeat;
   background-size: cover;
   background-blend-mode: luminosity; }
 
-.citidrive {
-  background: url(../images/citidrive_banner.jpg) no-repeat;
+.judic {
+  background: url(../images/judic.png) no-repeat;
   background-size: cover;
   background-blend-mode: luminosity; }
 
+.judic1 {
+  background: url(../images/judic1.png) no-repeat;
+  background-size: cover;
+  background-blend-mode: luminosity; }
+
+.judic {
+  background: url(../images/judic2.png) no-repeat;
+  background-size: cover;
+  background-blend-mode: luminosity; }
+    
 .p-items {
   text-align: center !important; }
   .p-items img {
