@@ -162,7 +162,7 @@ g, path {
       left: 0;
       z-index: 400;
       opacity: 0;
-      background: url(../images/day-header-mobile.jpg) no-repeat center center fixed;
+      background: url(../images/tech.jpg) no-repeat center center fixed;
       background-size: cover; }
     body .nigh {
       opacity: 1; }
@@ -414,8 +414,8 @@ g, path {
 .icon-47:before {
   content: "S"; }
 
-.midday {
-  /**	@extend .morning; */ }
+/* .midday {
+  *	@extend .morning; } */
 
 .top {
   position: absolute;
@@ -468,7 +468,7 @@ g, path {
   .grt .hello {
     font-size: 3.5em;
     font-family: Metric-Black;
-    font-line-height: 2; }
+    ; }
   .grt #weather {
     text-transform: uppercase;
     line-height: 0; }
@@ -522,7 +522,7 @@ g, path {
   left: 0;
   z-index: 400;
   opacity: 0;
-  background: url(../images/day-header.jpg) no-repeat center center fixed;
+  background: url(../images/tech.jpg) no-repeat center center fixed;
   background-size: cover; }
 
 .even {
@@ -533,7 +533,7 @@ g, path {
   left: 0;
   z-index: 380;
   opacity: 0;
-  background: url(../images/night-header.jpg) no-repeat center center fixed;
+  background: url(../images/even-tech.jpg) no-repeat center center fixed;
   background-size: cover; }
 
 .nigh {
@@ -544,7 +544,7 @@ g, path {
   left: 0;
   z-index: 360;
   opacity: 1;
-  background: url(../images/midnight-header.jpg) no-repeat center center fixed;
+  background: url(../images/mid-tech.jpg) no-repeat center center fixed;
   background-size: cover; }
 
 .approach {
