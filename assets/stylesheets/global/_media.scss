@@ -1,0 +1,229 @@
+$mobile: "(max-width: 768px)";
+$desktop: "(min-width: 768px)";
+
+
+@media #{$mobile} {
+	body{
+		font: {
+			size: 11px;
+		}
+
+		overflow: scroll;
+
+
+	.menu{
+		display: none;
+	}
+
+	.p-item{
+	    height: 85vh;
+	}
+
+	.top, .approach, .port, .about-me{
+		position: relative;
+		height: auto;
+		top: auto;
+	}
+
+	.port{
+		height: 100vh;
+	}
+
+	.day, .even, .nigh{
+	 @include day-bg('day-header-mobile', 400, 0);
+	}
+
+	.nigh{
+		opacity: 1;
+	}
+
+	.day-cycle{
+		display: none;
+	}
+
+	.top{
+		height: 100vh !important;
+	}
+
+	.top-corner{
+		margin: 50px 50px 170px;
+	}
+
+	.grt{
+
+		.hello{
+			font:{
+				size: 3.2em !important;
+			}
+		}
+
+		#weather{
+			h2{
+				font: {
+					size: 3em;
+				}
+			}
+		}
+	}
+
+	.me{
+		margin: -40px 40px;
+
+		.name{
+		display: block;
+		font: {
+			size: 3.5em;
+		}
+	}
+	}
+
+	.map-canvas{
+		overflow: hidden;
+		svg{
+			width: 800px;
+			height: auto;
+		}
+	}
+
+	.f-row{
+		left: 70%;
+	}
+
+
+
+	.des{
+		font: {
+			size: 2.5em !important;
+		}
+
+	}
+
+	.ux{
+		font: {
+			size: 1.7em !important;
+		}
+		
+	}
+
+	.flow{
+		width: 32vw;
+
+		svg{
+			max-width: 45%;
+		}
+
+		.flow-text{
+			margin: 10px 0;
+		}
+	}
+
+	.process-note{
+		min-height: 240px;
+	}
+
+	.process-logo{
+
+			img {
+	    width: 45px;
+		}
+	}
+
+	.popcons{
+	@include port-bg('popcons_banner-mobile');
+	}
+
+	.loral{
+		@include port-bg('loral_banner-mobile');
+	}
+
+	.jokerrr{
+		@include port-bg('jokerrr_banner-mobile');
+	}
+
+	.citidrive{
+		@include port-bg('citidrive_banner-mobile');
+	}
+
+	
+
+	.flex-direction-nav{
+		display: none;
+	}
+
+	.p-left{
+		position: absolute;
+		top: auto;
+		bottom: 0;
+	    width: 100%;
+	    padding: 15px;
+	    font-size: 2.6em;
+	    z-index: 100;
+	    background: $transBox;
+	    color: $ylw;
+	    height: 20vh;
+	}
+
+	.view-proj{
+		color: $ylw;
+	}
+
+	.p-right{
+		margin-left: 0;
+		width: 100vw;
+	}
+
+	.p-items{
+		margin: 20px -160px;
+		padding: 1px 0;
+	}
+
+	.content{
+		padding: 20px;
+
+		p{
+		padding: 0 10px;
+		}
+	}
+
+	.bx, .bx2{
+		display: none !important;
+	}
+
+	.tools-img{
+		display: block;	
+	}
+
+	.title{
+		font: {
+			size: 3em;
+			family: $mainFont;
+			weight: 800;
+		}
+
+		svg{
+			display: none;
+		}
+	}
+
+	.port-top{
+		left: 0;
+
+		hr{
+			background: $ylw;
+		}
+	}
+
+	.portfolio {
+
+		.title{
+			color: $ylw;
+		}
+
+		svg {
+		    width: 1.3em !important;
+		    margin: -2px 5px !important;
+		}
+
+	}
+	}
+}

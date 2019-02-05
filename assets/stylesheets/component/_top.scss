@@ -1,0 +1,154 @@
+.top{
+	@include group(0);
+}
+
+.f-row{
+	height: 83%;
+	width: 40em;
+	left: 60%;
+	position: relative;
+	z-index: 250;
+}
+
+
+.map-canvas{
+	position: absolute;
+	z-index: 200;
+	height: inherit;
+	width: 100%;
+	left: 0;
+	top: 0;
+
+	svg{
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.day-cycle{
+	position: absolute;
+    right: 140px;
+    top: 60px;	
+    height: 200px;
+    width: 200px;
+
+    svg{
+    	width: 100%;
+    	height: 100%;
+    }
+}
+
+.top-corner{
+	margin: 80px 50px 190px;
+
+	hr{
+		height: 3px;
+	    width: 230px;
+	    background: #fff;
+	    position: relative;
+	    border: 0;
+	    margin: 20px 0 0 0;
+		}
+}
+
+.grt{
+	margin: 0;
+	line-height: 0;
+
+	.hello{
+		font: {
+			size: 3.5em;
+			family: $blackFont;
+			line-height: 2;
+		}
+	}
+
+	#weather {
+		text-transform: uppercase;
+		line-height: 0;
+
+		h2{
+			font: {
+				size: 3.2em;
+			}
+		}
+	}
+
+	i{
+		font:{
+			family: Weather;
+			weight: normal;
+			style: normal;
+		}
+	}
+
+}
+
+.top-screen{
+	z-index: 800;
+    position: absolute;
+    width: 100%;
+	
+	.right-side{
+		float: right;
+		padding: 40px 5px;
+		width: 700px;
+	}
+
+}
+
+
+.me{
+	margin: 0 40px;
+	text-align: center;
+
+	span{
+		margin: 0 5px;
+		display: block;
+	}
+
+	.name{
+		font: {
+			size: 4.4em;
+		}
+	}
+	.des{
+		font: {
+			size: 2.7em;
+			weight: 800;
+		}
+	}
+	.loc{
+		font: {
+			size: 2.4em;
+		}
+	}
+}
+
+.mask{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: $mask;
+	z-index: 600;
+}
+
+#day-txt{
+	text-anchor: middle;
+}
+
+.day{
+	@include day-bg('day-header', 400, 0);
+}
+
+.even{
+	@include day-bg('night-header', 380, 0);
+}
+
+.nigh{
+	@include day-bg('midnight-header', 360, 1);
+}
+
+

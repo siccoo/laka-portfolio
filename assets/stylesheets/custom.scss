@@ -1,0 +1,29 @@
+/* Style Sheet for richardekwonye.com
+ * Written in sass
+ * author: Richard Ekwonye
+ * email:ekwonyenoob@gmail.com
+ * website: http://richardekwonye.com */
+
+ @import "config/colors";
+
+ @import "config/fonts";
+
+ @import "config/mixins";
+
+ @import "global/general";
+
+ @import "global/media";
+
+ @import "global/weather-icons";
+
+ @import "global/time-spec";
+
+ @import "component/top";
+
+ @import "component/approach";
+
+ @import "component/portfolio";
+
+ @import "component/me";
+
+

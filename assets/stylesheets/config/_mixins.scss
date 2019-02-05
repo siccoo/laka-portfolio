@@ -1,0 +1,71 @@
+@mixin RotateX($pers, $deg){
+  	transform: perspective($pers) rotateX($deg);
+}
+
+@mixin RotateY($pers, $deg){
+  	transform: perspective($pers) rotateY($deg);
+}
+
+@mixin group ($pos){
+    position: absolute;
+    top: $pos;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+ 
+  #{$property}: $value;
+}
+
+@mixin bg-gradient-t2b($start-colour, $end-colour) {
+    background-color: $start-colour;
+    background-image: -webkit-gradient(linear, left top, left bottom, from($start-colour), to($end-colour));
+    background-image: -webkit-linear-gradient(top, $start-colour, $end-colour);
+    background-image:    -moz-linear-gradient(top, $start-colour, $end-colour);
+    background-image:     -ms-linear-gradient(top, $start-colour, $end-colour);
+    background-image:      -o-linear-gradient(top, $start-colour, $end-colour);
+    background-image:         linear-gradient(top, $start-colour, $end-colour);
+    filter:            progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$start-colour}', end-colourStr='#{$end-colour}');
+}
+
+@mixin bg-gradient-l2r($start-colour, $end-colour) {
+    background-color: $start-colour;
+    background-image: -webkit-gradient(linear, left top, right top, from($start-colour), to($end-colour));
+    background-image: -webkit-linear-gradient(left, $start-colour, $end-colour);
+    background-image:    -moz-linear-gradient(left, $start-colour, $end-colour);
+    background-image:     -ms-linear-gradient(left, $start-colour, $end-colour);
+    background-image:      -o-linear-gradient(left, $start-colour, $end-colour);
+    background-image:         linear-gradient(left, $start-colour, $end-colour);
+    filter:            progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$start-colour}', end-colourStr='#{$end-colour}', gradientType='1');
+}
+
+$imgPath: '../images';
+
+@mixin timespec ($bg){
+    .top{
+        background: url(#{$imgPath}/#{$bg}.jpg) no-repeat center center fixed;
+    }
+}
+
+@mixin day-bg($bg, $index, $opa){
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: $index;
+    opacity: $opa;
+    background: url(#{$imgPath}/#{$bg}.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+@mixin port-bg($bg){
+    background: url(#{$imgPath}/#{$bg}.jpg) no-repeat;
+    background-size: cover;
+    background-blend-mode: luminosity;
+}
