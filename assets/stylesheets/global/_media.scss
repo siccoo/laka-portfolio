@@ -52,7 +52,7 @@ $desktop: "(min-width: 768px)";
 	.grt{
 
 		.hello{
-			font:{
+			font{
 				size: 3.2em !important;
 			}
 		}
@@ -216,7 +216,7 @@ $desktop: "(min-width: 768px)";
 	.portfolio {
 
 		.title{
-			color: $ylw;
+			color: ylw;
 		}
 
 		svg {
